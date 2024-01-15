@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacte</title>
+    <style>
+        body {
+            background-color: wheat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            margin: 0;
+        }
+        .banner {
+            background-color: black;
+            font-size: x-large;
+            font-family: "Geneva";
+            color: wheat;
+            padding: 10px;
+            text-align: center;
+            width: 100%; /* Ancho del banner al 100% */
+            box-sizing: border-box; /* Incluye el relleno en el ancho total */
+        }
+        fieldset {
+            padding: 20px 40px;
+            background-color: burlywood;
+        }
+        h1, h2 {
+            color: black;
+            font-size: x-large;
+            font-family: "Geneva";
+            margin-top: 20px;
+        }
+        p {
+            color: black;
+            font-size: medium;
+            font-family: "Geneva";
+        }
+        a {
+            color: black;
+            font-size: medium;
+            font-family: "Geneva";
+        }
+        a:hover {
+            color: burlywood;
+        }
+        form {
+            color: black;
+            font-size: medium;
+            font-family: "Geneva";
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        Contacte
+    </div>
+    <form action="mailto:psauraf@gmail.com" method="post">
+        <fieldset>
+            <legend><b>Dades personals</b></legend>
+            Nom (requerit)<br>
+            <input type="text" placeholder="Escriu el teu nom" name="nom" maxlength="20" size="20" required><br>
+            Cognoms<br>
+            <input type="text" placeholder="Escriu el teu cognom" name="cognoms" maxlength="20" size="20"><br>
+            Direcció d'e-mail (requerida)<br>
+            <input type="email" placeholder="Escriu el teu e-mail" name="usermail" required><br>
+            Edat<br>
+            <input type="number" min="14" max="80" name="edat"><br>
+            Asumpte (requerit)<br>
+            <input type="text" placeholder="Escriu el teu asumpte" name="asumpte" maxlength="10" size="20" required><br>
+            Comentari (requerit)<br>
+            <textarea name="comentari" placeholder="Escriu el teu comentari" rows="4" cols="50" required></textarea><br>
+        </fieldset>
+        <fieldset>
+            <legend><b>Perfil de l'interessat</b></legend>
+            <input type="radio" name="consulta" value="aficionat" checked="checked">Aficionat<br>
+            <input type="radio" name="consulta" value="professional">Professional del sector<br>
+            <input type="radio" name="consulta" value="artista">Artista solista<br>
+            <input type="radio" name="consulta" value="banda">Banda<br>
+        </fieldset>
+        <fieldset>
+            <legend><b>En cas de voler assessorament tècnic, especifica en quin camp:</b></legend>
+            <input type="checkbox" name="sodirecte" value="sodirecte">So en directe<br>
+            <input type="checkbox" name="soestudi" value="soestudi">So en estudi<br>
+            <input type="checkbox" name="produccio" value="produccio">Producció musical<br>
+            <input type="checkbox" name="backline" value="backline">Backline<br>
+        </fieldset>
+        <fieldset>
+            <legend><b>Especifica quins serveis estaríes interessat en contractar de Phonography Studio:</b></legend>
+            <input type="checkbox" name="gravacio" value="gravacio">Gravació<br>
+            <input type="checkbox" name="produccio" value="produccio">Producció<br>
+            <input type="checkbox" name="mescla" value="mescla">Mescla<br>
+            <input type="checkbox" name="mastering" value="mastering">Mastering<br>
+        </fieldset>
+        <br>
+        <input type="submit" name="buscar" value="Enviar">
+        <input type="reset" name="borrar" value="Borrar dades del formulari"><br>
+        <br>
+        <a href="../index.html" target="_self">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-skip-backward" viewBox="0 0 16 16">
+                <path d="M.5 3.5A.5.5 0 0 1 1 4v3.248l6.267-3.636c.52-.302 1.233.043 1.233.696v2.94l6.267-3.636c.52-.302 1.233.043 1.233.696v7.384c0 .653-.713.998-1.233.696L8.5 8.752v2.94c0 .653-.713.998-1.233.696L1 8.752V12a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm7 1.133L1.696 8 7.5 11.367V4.633zm7.5 0L9.196 8 15 11.367V4.633z"/>
+            </svg> Tornar
+        </a>
+    </form>
+</body>
+</html>
