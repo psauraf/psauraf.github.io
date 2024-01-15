@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de pizza</title>
+    <style>
+        body {
+            background-image: url('../actividad5/imagenes/pizza_resize.jpeg');
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 0;
+        }
+        fieldset {
+            padding: 20px 40px;
+            background-color: darkslategrey;
+        }
+        h1, h2 {
+            color: whitesmoke;
+            font-size: x-large;
+            font-family: "Geneva";
+            margin-top: 20px;
+        }
+        p {
+            color: whitesmoke;
+            font-size: larger;
+            font-family: "Geneva";
+        }
+        a {
+            color: black;
+            font-size: larger;
+            font-family: "Geneva";
+        }
+        a:hover {
+            color: whitesmoke;
+        }
+        form {
+            color: whitesmoke;
+            font-size: medium;
+            font-family: "Geneva";
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>PEDIDO DE PIZZA</h1>
+    <form action="mailto:psauraf@gmail.com" method="post">
+        <fieldset>
+            <legend><b>La pizza</b></legend>
+            <br>
+            <label for="tomate"><input type="checkbox" id="tomate" name="ingredientes" value="tomate">Tomate</label><br>
+            <label for="mozzarella"><input type="checkbox" id="mozzarella" name="ingredientes" value="mozzarella">Mozzarella</label><br>
+            <label for="ajo"><input type="checkbox" id="ajo" name="ingredientes" value="ajo">Ajo</label><br>
+            <label for="cebolla"><input type="checkbox" id="cebolla" name="ingredientes" value="cebolla">Cebolla</label><br>
+            <label for="champiñones"><input type="checkbox" id="champiñones" name="ingredientes" value="champiñones">Champiñones</label><br>
+            <label for="rucula"><input type="checkbox" id="rucula" name="ingredientes" value="rucula">Rúcula</label><br>
+            <label for="gorgonzola"><input type="checkbox" id="gorgonzola" name="ingredientes" value="gorgonzola">Gorgonzola</label><br>
+            <label for="jamonyork"><input type="checkbox" id="jamonyork" name="ingredientes" value="jamonyork">Jamón York</label><br>
+            <label for="queso"><input type="checkbox" id="queso" name="ingredientes" value="queso">Queso pecorino</label><br>
+            <label for="jamonserrano"><input type="checkbox" id="jamonserrano" name="ingredientes" value="jamonserrano">Jamón Serrano</label><br>
+            <label for="guanciale"><input type="checkbox" id="guanciale" name="ingredientes" value="guanciale">Guanciale</label><br>
+        </fieldset>
+        <fieldset>
+            <legend><b>Tamaño</b></legend>
+            <br>
+            <label for="pequena"><input type="radio" id="pequena" name="tamano" value="pequena">Pequeña</label><br>
+            <label for="mediana"><input type="radio" id="mediana" name="tamano" value="mediana">Mediana</label><br>
+            <label for="grande"><input type="radio" id="grande" name="tamano" value="grande">Grande</label><br>
+        </fieldset>
+        <fieldset>
+            <legend><b>Datos de la entrega</b></legend>
+            <label for="nombre">Nombre<br><input type="text" id="nombre" placeholder="Escribe tu nombre" name="nombre" maxlength="20" size="20" required></label><br>
+            <label for="direccion">Dirección<br><input type="text" id="direccion" placeholder="Escribe tu dirección" name="direccion" maxlength="60" size="50" required></label><br>
+            <label for="telefono">Teléfono<br><input type="text" id="telefono" placeholder="Escribe tu teléfono" name="telefono" maxlength="9" size="15" required></label><br>
+            <label for="instrucciones">Instrucciones especiales<br><textarea id="instrucciones" name="instrucciones" placeholder="Escribe tus instrucciones" rows="4" cols="50"></textarea></label><br>
+        </fieldset>
+        <fieldset>
+            <legend><b>Método de pago</b></legend>
+            <label for="so">Método de pago</label> <br>
+            <select id="so" name="so">
+                <option value="" selected="selected">- selecciona -</option>
+                <option value="efectivo">Efectivo</option>
+                <option value="tarjeta">Tarjeta</option>
+                <option value="bizum">Bizum</option>
+                <option value="paypal">PayPal</option>
+                <option value="crypto">Crypto</option>
+            </select>
+        </fieldset>
+        <input type="submit" name="ok" value="Ok">
+        <br>
+    </form>
+</body>
+</html>
