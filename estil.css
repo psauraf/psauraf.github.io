@@ -1,0 +1,38 @@
+h1{
+    background-color:rgba(173, 216, 230, 0.5);
+    text-align: center;
+    border: 5px solid #4e5943;
+    padding: 10px;
+    color:aliceblue;
+}
+
+h2{
+    text-align: center;
+    font-style: italic;
+    color: white;
+    text-decoration: underline;
+}
+
+body{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+      background-image: url(./imatges/class.jpeg);
+      background-size: cover;
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+}
+
+li{
+    display: inline-block;
+    border: 2px solid orangered;
+    padding: 10xp;
+    margin: 5px;
+    font-size: 20xp;
+    background-color: white;
+}
+
+a{
+    color: orangered;
+}
